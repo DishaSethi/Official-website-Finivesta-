@@ -6,6 +6,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+import HackBanner02 from '../Hackathon/Hackbanner02.png';
+import HackBanner03 from '../Hackathon/Hackbanner03.png';
+
 // import { Tween } from 'react-gsap';
 
 const Home = () => {
@@ -48,6 +51,7 @@ const Home = () => {
   return (
     <div className="Home">
 
+    {/*}
       <section className="hero">
         <div className="content">
           <h1>
@@ -81,21 +85,25 @@ const Home = () => {
           </div>
         </div>
       </section>
+      */}
 
-      {/* Banner Section */}
-
-      {/*
-      <section className="banner">
-        <div className="banner-content">
-          <button
-            className="banner-button"
-            onClick={() => (window.location.href = "/finweek25")}
-          >
-            Learn More
-          </button>
+      <section class="landing">
+        <div class="slideshow">
+          <div class="slides">
+              <img class="slide" src={HackBanner03} alt="Slide 1"/>
+              <img class="slide" src={HackBanner02} alt="Slide 2"/>
+          </div>
         </div>
       </section>
-      */}
+      
+      <div className="banner-button-row">
+        <button
+          className="banner-button"
+          onClick={() => (window.location.href = "/hackathon")}
+        >
+          Explore
+        </button>
+      </div>
 
       {/* Jhalak's code */}
       <section className="course">

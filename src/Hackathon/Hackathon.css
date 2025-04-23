@@ -18,6 +18,7 @@
     position: relative;
     overflow: hidden;
   }
+  
   .sidebar {
     position: fixed;
     top: 50%;
@@ -356,20 +357,6 @@
   
   }
   
-  
-  /* Tracks Section */
-  .tracks {
-    padding: 80px 20px;
-    background-color:#000000;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .tracks-title {
-    font-size: 2rem;
-    color: #9edf66;
-    margin-bottom: 40px;
-  }
   
   .tracks-grid {
     display: flex;
@@ -913,7 +900,7 @@
   animation: scroll 20s linear infinite;
 }
 
-.slide {
+.hack-slide {
   flex: 0 0 auto;
   width: 200px;
   height: 150px;
@@ -922,7 +909,7 @@
 }
 
 /* Default state */
-.slide img {
+.hack-slide img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -937,7 +924,7 @@
   animation-play-state: paused;
 }
 
-.sponsor-slider:hover .slide img {
+.sponsor-slider:hover .hack-slide img {
   transform: scale(1.1);
 
   opacity: 0.9;
